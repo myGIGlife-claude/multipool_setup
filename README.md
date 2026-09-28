@@ -6,6 +6,12 @@ Installation files for [Multi-Pool-Installer](https://github.com/mygiglifeinc-gl
 
 Supported operating systems: Ubuntu 22.04, 24.04 and 26.04 LTS (x86_64).
 
+How the pieces fit:
+1. **Multi-Pool-Installer:** its bootstrap script clones this repo.
+2. **multipool_setup:** creates the multipool user, writes `/etc/multipool.conf` and shows the menu.
+3. The menu hands off to [multipool_yiimp_single](https://github.com/mygiglifeinc-glitch/multipool_yiimp_single) or [multipool_yiimp_multi](https://github.com/mygiglifeinc-glitch/multipool_yiimp_multi).
+4. Those install [YiiMP](https://github.com/mygiglifeinc-glitch/yiimp).
+
 ## Install-time overrides
 
 These environment variables can be set before running `multipool`:
