@@ -18,7 +18,7 @@ These environment variables can be set before running `multipool`:
 
 | Variable | Default | Purpose |
 |:--|:--|:--|
-| `PHP_VERSION` | `8.3` | PHP version installed from `ppa:ondrej/php` (only used on first install; stored in `/etc/multipool.conf`) |
+| `PHP_VERSION` | `8.3` | PHP version installed from `ppa:ondrej/php` (only used on first install; stored in `/etc/multipool.conf`). Where the PPA or that version is not available (Ubuntu 26.04) Ubuntu's own PHP is used, 8.5 on 26.04 |
 | `MULTIPOOL_GITHUB` | `https://github.com/myGIGlife-claude` | Where the YiiMP installers are cloned from (for forks) |
 | `YIIMP_SINGLE_REF` / `YIIMP_MULTI_REF` | `master` | Branch or tag of the YiiMP single/multi installers |
 | `MULTIPOOL_SKIP_OS_CHECK` | unset | Set to `1` to try an unsupported OS release |
